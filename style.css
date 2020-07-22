@@ -16,9 +16,20 @@ h1 {
 
 button {
     margin-left: -24px;
+    padding:;
 }
 h2 {
     text-align: center;
     font-size: 32px;
 }
+
+#topTab {
+    background-color: turquoise;
+}
+
+#savingGoal {
+    justify-content: center;
+}
+
+
 
