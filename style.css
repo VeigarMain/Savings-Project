@@ -16,7 +16,7 @@ h1 {
 
 button {
     margin-left: -24px;
-    padding:;
+    z-index: auto;
 }
 h2 {
     text-align: center;
