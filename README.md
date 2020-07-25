@@ -19,3 +19,4 @@ Kayla and Jake will work on creating a responsive/picturess web application that
 Xyra will be working on using Ajax/JavaScript/Jquery to try and make our web application dynamic and functional.
 
 ![wireframe-revised](https://user-images.githubusercontent.com/66339673/88127717-5c2fd300-cba2-11ea-87b2-ee5b130e833b.png)
+![wireframe 2](https://user-images.githubusercontent.com/65522080/88462765-ce8f0480-ce7b-11ea-80bf-e39101852205.jpg)
