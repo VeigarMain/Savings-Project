@@ -1,22 +1,15 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Savings Project</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
-  <link rel="stylesheet" href="style.css">
-  <link
-rel="stylesheet"
-href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-crossorigin="anonymous"
-/>
-  <link rel=“shortcut icon” href=“pelican.ico”>
-</head>
-
-<body>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Savings Project</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="shortcut icon" href = "assets/money.ico">
+  </head>
+  <body>
   <section class="hero is-primary" id="topTab">
     <div class="hero-body">
       <div class="container">
@@ -49,20 +42,20 @@ crossorigin="anonymous"
     <div class="column">
       <div id="panel-block is-active" style="padding: 10px;">
 
-        <input class="input is-rounded" style="width: 30em;" type="text" placeholder="What are you saving for?">
-        <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
-        <input class="input is-rounded" style="width: 30em;" type="text" placeholder="How much does it cost?">
-        <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
-        <input class="input is-rounded" style="width: 30em;" type="text"
+        <input class="input is-rounded" id="search-value" style="width: 30em;" type="text" placeholder="What are you saving for?">
+        <button class="button is-primary" id="search-button">Primary</button>
+        <input class="input is-rounded" id="search-value" style="width: 30em;" type="text" placeholder="How much does it cost?">
+        <button class="button is-primary" id="search-button" >Primary</button>
+        <input class="input is-rounded" id="search-value" style="width: 30em;" type="text"
           placeholder="How much have you saved this time?">
-        <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
+        <button class="button is-primary" id="search-button">Primary</button>
         <div id="panel-block">
           <div class="columns">
 
             <div class="column">
 
 
-              `
+              
               </button>
               <div class="column">
               </div>
@@ -70,21 +63,26 @@ crossorigin="anonymous"
           </div>
         </div>
         <span class="panel-icon">
+
+          <i class="fas fa-book" aria-hidden="true"></i>
         </span>
         <!-- Make column for input of savings -->
       </div>
       <div id="panel-block">
         <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
         </span>
 
       </div>
       <div id="panel-block">
         <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
         </span>
 
       </div>
       <div id="panel-block">
         <span class="panel-icon">
+          <i class="fas fa-book" aria-hidden="true"></i>
         </span>
 
       </div>
@@ -131,6 +129,10 @@ crossorigin="anonymous"
     </div>
 </footer>
  
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="script.js"></script>
   </body>
   
 </html>
