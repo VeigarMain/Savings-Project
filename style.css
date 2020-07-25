@@ -1,42 +1,29 @@
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 10px;
-    background-color:  #3298dc;
-    color:  black;
-}
-
-.pelicanFooter {
-    padding-bottom: 10px;
-    padding-top: 0px;
-}
-
-
 h1 {
     text-align: center;
-}
-
-
-
-button {
-    margin-left: -24px;
+    text-shadow: 2px 2px #000000;
+    transition-duration: 1s;
     
 }
+
+h1:hover {
+    letter-spacing: 10px;
+  }
+
 
 h2 {
     text-align: center;
     font-size: 32px;
 }
 
-
-
-#topTab {
-    background-color: turquoise;
+button {
+    margin-left: -24px;
+    
 }
 
+#topTab {
+    background-image: url("assets/moneyfalling.gif");
+    
+}
 
 
 #savingGoal {
@@ -44,4 +31,25 @@ h2 {
 }
 
 
+.panel {
+    background-color: teal;
+}
 
+.panel-heading {
+    background-color: lightseagreen;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    width: 100%;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    background-color:  lightseagreen;
+    color:  black;
+}
+/* 
+.pelicanFooter {
+    padding-bottom: 10px;
+    padding-top: 0px;
+} */
