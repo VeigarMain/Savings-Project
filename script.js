@@ -1,6 +1,1 @@
-
-
-
- 
-        
-  
+var searchTerms = ["Money", "Savings", "Invest", "Monetary", "Investment", "Saving", "Cash", "Dollar", "Finances", "Canny", "Build", "Achieve", "Seed", "Growth", "Aspire", "Goal", "Achieve", "Ambition", "Thrifty", "Spend", "Success", "Succeed"];
