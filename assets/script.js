@@ -1,3 +1,6 @@
+var cost = $("#cost").val();
+console.log(cost);
+
 /* var myChart = new Chart(ctx, {
     type: 'doughnut',
     data: data {
@@ -11,6 +14,7 @@
     },
     options: options
 }); */
+
 
 new Chart(document.getElementById("doughnut-chart"), {
     type: 'doughnut',
