@@ -22,8 +22,8 @@ $(document).ready(function() {
         var cost = $("#cost").val();
         console.log(cost);
         
-        $("#cost").val("");
-        costFunction();
+        //$("#cost").val("");
+        //costFunction();
 
         localStorage.setItem('goalAmt', cost);
         var goal = localStorage.getItem("goalAmt");
@@ -44,7 +44,29 @@ $(document).ready(function() {
      })
      
 
-     function costFunction(costAmt) {
+     function chartDataFunction() {
+         var goal = localStorage.getItem("goalAmt");
+         console.log(goal);
+         var totalSaved = saved + localStorage.getItem("savedAmt");
+         var remainingAmt = goal - totalSaved;
+                     
+         new Chart(document.getElementById("doughnut-chart"), {
+                         type: 'doughnut',
+                         data: {
+                             labels: ["How much $ you saved", "How much $ until goal reached"],
+                             datasets: [
+                                 {
+                                     label: "$",
+                                     backgroundColor: ["#3e95cd", "#8e5ea2"],
+                                     data: [saved, remainingAmt]
+                                     //data: [4500,10000]
+                                 }
+                             ]
+                         },
+                         options: {
+                     
+                         }
+                     });
          //input saved amount into doughnut chart object data array
          //saved amount should be a running total and saved in localstorage
          //calculate amount left to goal by subtracting total saved from goal cost
@@ -65,21 +87,3 @@ $(document).ready(function() {
     options: options
 }); */
 
-
-new Chart(document.getElementById("doughnut-chart"), {
-    type: 'doughnut',
-    data: {
-        labels: ["How much $ you saved", "How much $ until goal reached"],
-        datasets: [
-            {
-                label: "$",
-                backgroundColor: ["#3e95cd", "#8e5ea2"],
-                //data: [saved, remaining]
-                data: [4500,10000]
-            }
-        ]
-    },
-    options: {
-
-    }
-});
