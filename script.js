@@ -20,7 +20,8 @@ function buttonFunction(searchTerm) {
              console.log("succes got data", info.length);
              for (var i = 0; i < info.length; i++) {
                  var img = $("<img>").addClass("img" + 1).attr("src", info[i].images.original.url);
-                 $("p").append(img);
+                 $("#giphy-api").append(img);
+                 event.preventDefault("#giphy-api");
              }
            }
        );          
