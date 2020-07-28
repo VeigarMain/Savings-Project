@@ -16,6 +16,7 @@ We will use DIV's as a tag to implement page functionality, so we won't have to 
 # Breakdown of tasks
 For the first week, until Thursday's class, Xyra and Kevin will be back-end dev's and Jake and Kayla will be the front-end dev's.
 Kayla and Jake will work on creating a responsive/picturess web application that will make our application more user friendly, while Kevin and
-Xyra will be working on using Ajax/JavaScript/Jquery to try and make our web application dynamic and functional.
+Xyra will be working on creating wireframe, using Ajax/JavaScript/Jquery to try and make our web application dynamic and functional.
 
 ![wireframe-revised](https://user-images.githubusercontent.com/66339673/88127717-5c2fd300-cba2-11ea-87b2-ee5b130e833b.png)
+![fixed wireframe](https://user-images.githubusercontent.com/65522080/88498958-8dd5df00-cf92-11ea-8d57-7bbb65ecd788.jpg)

@@ -24,23 +24,14 @@
     </div>
     </div>
   </section>
-  <article class="panel is-info">
+
+<br>
+  <article class="panel">
     <p class="panel-heading">
       Savings Information
     </p>
-    <p class="panel-tabs">
-      <a>Savings Goal</a>
-    </p>
-    <!-- This will yeild the inputs for our user, for them to click on their specific saving goal, use the giphy api so the user will see a picture of what it is they are saving for + motivational opportunity so user can see what investment ideas they can use from the 2nd API -->
-
-
-    <span id="icon is-left">
-      <i class="fas fa-search" aria-hidden="true"></i>
-    </span>
-    </p>
-    </div>
-    <div class="column">
-      <div id="panel-block is-active" style="padding: 10px;">
+    <br>
+    <br>
 
         <input class="input is-rounded" id="search-value" style="width: 30em;" type="text" placeholder="What are you saving for?">
         <button class="button is-primary" id="search-button">Primary</button>
@@ -86,45 +77,27 @@
         </span>
 
       </div>
-  </article>
-
-  <div class="tile is-ancestor" id="savingGoal">
-    <div class="tile is-vertical is-6">
-      <div class="tile">
-        <div class="tile is-parent is-vertical">
-          <div class="tile is-child box">
-            <!-- Put any content you want -->
-
-            <hr>
-
-          </div>
-        </div>
-
-        <!-- Put any content you want -->
-
-
-
+<!--giphy api-->
+      <div id="charts">
+        <div class = "column" id ="giphy-api"></div>
+      
+<!--pie chart percentages-->
+      
+        <div class = "column" id ="pie-chart"></div> 
       </div>
-    </div>
+</div>
 
-  </div>
+</article>
 
-
-
-
-
-
-
-  <!-- Still could use a fontawesome copywrite logo.. and possbily our githubs.. -->
   <footer class="footer">
     <div class="content has-text-centered">
-      <i class="fa fa-copyright" aria-hidden="true"></i>
+  
       <p>
-        <div class = "pelicanFooter">
-         <img src = "assets/pelican.jpg" height="60px" width="30px">
+      <div class="pelicanFooter">
+        <img src="assets/images/pelican.jpg" height="60px" width="30px">
         </br>
-        <strong>Heavenly Pelicans </strong>
-        </div>
+        <strong>Heavenly Pelicans </strong> <i class="fa fa-copyright" aria-hidden="true"></i>
+      </div>
       </p>
     </div>
 </footer>
@@ -135,4 +108,4 @@
 <script src="script.js"></script>
   </body>
   
-</html>
+  </html>
