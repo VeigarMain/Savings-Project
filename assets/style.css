@@ -21,7 +21,7 @@ button {
 }
 
 #topTab {
-    background-image: url("assets/images/moneyfalling.gif");
+    background-image: url("./images/moneyfalling.gif");
     
 }
 
@@ -61,8 +61,8 @@ button {
 
 .column {
     float: left;
-    width: 200px;
-    height: 180px;
+    width: 450px;
+    height: 350px;
   }
   
 #charts {
