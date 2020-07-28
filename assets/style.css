@@ -2,7 +2,7 @@ h1 {
     text-align: center;
     text-shadow: 2px 2px #000000;
     transition-duration: 1s;
-    
+  
 }
 
 h1:hover {
@@ -21,7 +21,7 @@ button {
 }
 
 #topTab {
-    background-image: url("assets/moneyfalling.gif");
+    background-image: url("assets/images/moneyfalling.gif");
     
 }
 
@@ -39,6 +39,11 @@ button {
     background-color: lightseagreen;
 }
 
+.column-is-three-fifths{
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
 .footer {
     position: fixed;
     left: 0;
@@ -48,8 +53,29 @@ button {
     background-color:  lightseagreen;
     color:  black;
 }
-/* 
+
 .pelicanFooter {
     padding-bottom: 10px;
     padding-top: 0px;
-} */
+}
+
+.column {
+    float: left;
+    width: 200px;
+    height: 180px;
+  }
+  
+#charts {
+    margin-top: 40px;
+}
+
+#giphy-api {
+    margin-left: 160px;
+    background-color: white;
+}
+
+#pie-chart {
+    margin-left: 60px;
+    background-color: white;
+}
+
