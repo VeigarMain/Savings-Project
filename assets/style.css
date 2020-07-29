@@ -41,7 +41,7 @@ button {
 
 .column-is-three-fifths{
     margin-left: 40px;
-    margin-top: 40px;
+    margin-top: 70px;
 }
 
 .footer {
@@ -49,20 +49,23 @@ button {
     left: 0;
     width: 100%;
     padding-top: 0px;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     background-color:  lightseagreen;
     color:  black;
+    margin-top: 10px;
 }
 
 .pelicanFooter {
-    padding-bottom: 10px;
-    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-top: 10px;
 }
 
 .column {
     float: left;
     width: 450px;
-    height: 350px;
+    height: 300px;
+    margin-bottom: 90px;
+    padding-left: 10px;
   }
   
 #charts {
@@ -70,12 +73,12 @@ button {
 }
 
 #giphy-api {
-    margin-left: 160px;
+    margin-left: 130px;
     background-color: white;
 }
 
 #pie-chart {
-    margin-left: 60px;
+    margin-left: 50px;
     background-color: white;
 }
 
