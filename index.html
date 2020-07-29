@@ -16,26 +16,26 @@
   <section class="hero is-success" id="topTab">
     <div class="hero-body">
       <div class="container">
-      <h1 class="title">
-        
-         $avings Motivator
-        <p>“A penny saved is a penny earned."
-
+        <h1 class="title">
+          
+          $avings Motivator
+          <p>“A penny saved is a penny earned."
+            
         </p>
       </h1>
       
     </div>
-    </div>
-  </section>
+  </div>
+</section>
 
 <br>
-  <article class="panel">
-    <p class="panel-heading">
-      Savings Information
+<article class="panel">
+  <p class="panel-heading">
+    Savings Information
     </p>
     <br>
     <br>
-
+    
     <div class="columns">
       <div id="panel-block is-active">
         <div class="column-is-three-fifths">
@@ -43,13 +43,13 @@
         <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
         <br>
         <br>
-        <input class="input is-rounded " style="width: 30em;" type="text" placeholder="How much does it cost?">
-        <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
+        <input class="input is-rounded " id="cost" style="width: 30em;" type="text" placeholder="How much does it cost?">
+        <button class="button is-primary" id="costBtn"><i class="fas fa-dollar-sign"></i></button>
         <br>
         <br>
-        <input class="input is-rounded " style="width: 30em;" type="text"
+        <input class="input is-rounded " id="saved" style="width: 30em;" type="text"
           placeholder="How much have you saved this time?">
-        <button class="button is-primary"><i class="fas fa-dollar-sign"></i></button>
+          <button class="button is-primary" id="savedBtn"><i class="fas fa-dollar-sign"></i></button>
         </div>
       <br>
       <br>
@@ -63,10 +63,12 @@
 <!--giphy api-->
       <div id="charts">
         <div class = "column" id ="giphy-api"></div>
-      
-<!--pie chart percentages-->
-      
-        <div class = "column" id ="pie-chart"></div> 
+        
+        <!--pie chart percentages-->
+        
+        <div class = "column" id ="pie-chart">
+          <canvas id="doughnut-chart" width="800" height="450"></canvas>
+        </div> 
       </div>
 </div>
 
@@ -74,19 +76,19 @@
 
   <footer class="footer">
     <div class="content has-text-centered">
-  
+      
       <p>
-      <div class="pelicanFooter">
-        <img src="assets/images/pelican.jpg" height="60px" width="30px">
+        <div class="pelicanFooter">
+          <img src="assets/images/pelican.jpg" height="60px" width="30px">
         </br>
         <strong>Heavenly Pelicans </strong> <i class="fa fa-copyright" aria-hidden="true"></i>
       </div>
       </p>
     </div>
   </footer>
-  
-  <link href="assets/script.js">
-  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <script src="assets/script.js"></script>
   </body>
   
   </html>
