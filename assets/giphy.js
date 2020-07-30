@@ -1,7 +1,13 @@
 $(document).ready(function() {
     createLine();
-    
-    $("button").on("click", function (event) {
+
+    $("#resetBtn").on("click", function () {
+        localStorage.removeItem("input");
+        localStorage.removeItem("goalAmt");
+        localStorage.removeItem("savedAmt");
+    })
+
+    $("#searchBtn").on("click", function (event) {
         event.preventDefault();
         var searchTerm = $("#search-giphy").val();
         $("#search-giphy").val("");

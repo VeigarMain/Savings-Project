@@ -79,3 +79,7 @@ button {
     background-color: white;
 }
 
+#resetBtn {
+    margin: 10px;
+}
+
