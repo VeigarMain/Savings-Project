@@ -1,19 +1,44 @@
 $(document).ready(function() {
+    createLine();
     
     $("button").on("click", function (event) {
         event.preventDefault();
         var searchTerm = $("#search-giphy").val();
         $("#search-giphy").val("");
+        localStorage.setItem("input", searchTerm) 
         buttonFunction(searchTerm);
-        console.log(searchTerm);
+        // console.log(searchTerm);
         // alert("I am working!");
+        // localStorage.setItem(searchTerm);
+        // alert(localStorage.getItem(searchTerm));
+        console.log(localStorage.getItem("input"));
+
     })
-        
+  function createLine() {
+           
+         if (!localStorage.getItem("input")) {
+                return 
+            } else {
+            var term = localStorage.getItem("input");
+            console.log(term);
+            $("#search-giphy").val(term);
+                  
+            }
+    //   var input = JSON.parse(localStorage.getItem("input"));
+    //   console.log(localStorage.getItem("input"));
+    //   if (input > 0) {
           
-    });
+    //       buttonFunction(input[input - 1]);
+    //   }
+    //   for (let i = 0; i < input; i++) {
+    //       createLine(input[i]);
+    //       console.log(input[i]);
+    //   }
+          
+    };
 
 function buttonFunction(searchTerm) {
-    console.log(searchTerm);
+    // console.log(searchTerm);
     var apiKey = "A28hTTUxthLUB9TjNw2aZnUfAfLQQoeC";
        $.get(
         "https://api.giphy.com/v1/gifs/search?q=" + searchTerm + "&api_key=" + apiKey +"&limit=1",
@@ -29,4 +54,7 @@ function buttonFunction(searchTerm) {
            }
        );          
 };
-  
+    
+
+             
+});
