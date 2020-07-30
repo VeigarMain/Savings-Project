@@ -47,17 +47,14 @@ button {
 .footer {
     position: fixed;
     left: 0;
+    bottom: 0;
     width: 100%;
     padding-top: 0px;
     padding-bottom: 20px;
     background-color:  lightseagreen;
     color:  black;
     margin-top: 10px;
-}
-
-.pelicanFooter {
-    padding-bottom: 50px;
-    padding-top: 10px;
+    text-align: center;
 }
 
 .column {
