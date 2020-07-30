@@ -4,6 +4,8 @@
 
 $(document).ready(function () {
     // button on click function
+    goalFill();
+
     $("#search-button").on("click", function () {
         var searchTerm = $("#search-value").val();
         $("#search-value").val("");
@@ -18,6 +20,7 @@ $(document).ready(function () {
 
         })
     }
+
     $("#costBtn").on("click", function () {
         var cost = $("#cost").val();
         console.log(cost);
@@ -30,6 +33,16 @@ $(document).ready(function () {
         //var remain = goal - saved;
         //console.log(remain);
     })
+
+    function goalFill() {
+           
+        if (!localStorage.getItem("goalAmt")) {
+               return 
+           } else {
+           var goal = localStorage.getItem("goalAmt");
+           $("#cost").val(goal);
+                 
+           }
 
     $("#savedBtn").on("click", function () {
         var saved = parseInt($("#saved").val());
@@ -85,9 +98,10 @@ $(document).ready(function () {
         });
 
     }
-
-    savedFunction([1, 1]);
-});
+var totalSaved = parseInt(localStorage.getItem('savedAmt'));
+var remainingAmt = parseInt(goal) - parseInt(totalSaved);
+    savedFunction([totalSaved, remainingAmt]);
+}});
 
 /* var myChart = new Chart(ctx, {
     type: 'doughnut',
