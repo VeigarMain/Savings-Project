@@ -22,7 +22,7 @@ $(document).ready(function() {
             var term = localStorage.getItem("input");
             console.log(term);
             $("#search-giphy").val(term);
-                  
+              buttonFunction(term);    
             }
     //   var input = JSON.parse(localStorage.getItem("input"));
     //   console.log(localStorage.getItem("input"));
